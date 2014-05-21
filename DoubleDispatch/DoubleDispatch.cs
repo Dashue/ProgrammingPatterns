@@ -1,5 +1,4 @@
 ﻿
-using System;
 using Xunit;
 
 namespace DoubleDispatch
@@ -14,8 +13,6 @@ namespace DoubleDispatch
             db.Execute(new ReadQuery("Customer"));
             db.Execute(new WriteQuery());
             db.Execute(new DeleteQuery());
-
-            throw new NotImplementedException();
         }
     }
 }
